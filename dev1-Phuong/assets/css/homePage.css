@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(204, 204, 204);
+}
+
+.container{
+    margin-top: 250px;
+}
+
+
+.homeBox{
+    /* opacity: 95%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    background: rgb(211, 215, 216);
+    border-radius: 75px;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.homePage:hover h1 {
+    color: yellowgreen;
+}
+
+.homePage:hover .homeBox {
+    opacity: 50%;
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+  
+.textEffect {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+  
+.textEffect:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: yellowgreen;
+    transition: all 0.5s;
+}
+.homePage:hover .textEffect:before {
+    width: 100%;
+}

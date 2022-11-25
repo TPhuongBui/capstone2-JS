@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #eef0f2;
+}
+
+/* HEADER */
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar a{
+    font-size: 21px;
+}
+
+header .navbar-brand {
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFF;
+}
+header .navbar .nav-item .nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFF;
+    padding: 18px;
+    transition: all 0.5s;
+}
+
+header #navbarSupportedContent a{
+    transition: all 0.5s;
+}
+
+header #navbarSupportedContent a:hover{
+    transform: scale(1.20);
+    color: #00FF00;
+}
+
+@media screen and (max-width: 992px) {
+    header .navbar-toggler {
+      background-color: #fff;
+      background-image: url(../img/button-list.png);
+      background-size: cover;
+    }
+    header .navbar .nav-item {
+      text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/* PRODUCT */
+
+.product{
+    position: relative;
+    overflow: hidden;
+    background-color: #eef0f2;
+}
+
+.cartItem{
+    margin: auto;
+    width: 85%;
+}
+
+.mainItem .cartItem{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mainCart{
+    background: #FFF;
+    padding: 30px 45px;
+    border-radius: 12px;
+}
+
+.cardTop img{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.cartBody h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.cartBody h3{
+    font-size: 25px;
+    margin-top: 10px;
+    color: green;
+}
+
+.cartBody p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.active .cartBottom button {
+    margin-top: 27px;
+}
+
