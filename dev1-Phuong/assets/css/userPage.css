@@ -80,6 +80,10 @@ header #navbarSupportedContent a:hover{
     background-color: #eef0f2;
 }
 
+.product .form-select{
+    margin: 50px 0 0 145px;
+}
+
 .cartItem{
     margin: auto;
     width: 85%;
@@ -89,7 +93,7 @@ header #navbarSupportedContent a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .mainCart{
@@ -131,6 +135,8 @@ header #navbarSupportedContent a:hover{
 .active .cartBottom button {
     margin-top: 27px;
 }
+
+
 
 
 
