@@ -62,7 +62,7 @@
 
   
 
-  <section class="product">
+  <section class="mainProduct">
 
     <div class="">
       <select class="form-select w-25" aria-label="Default select example">
@@ -137,7 +137,101 @@
 
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-body">
-      
+      <div class="cart__contents">
+        <div class="cart__products">
+          <h2>Shopping Cart</h2>
+          <p class="microcopy">An overview of your selected products.</p>
+          <div class="products" id="cartList">
+            <div class="product">
+              <div class="product__1">
+                <div class="product__thumbnail">
+                  <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg" alt="Italian Trulli">
+                </div>
+                <div class="product__details">
+                  <div><b>iphoneX</b></div>
+                  <div class="tertiary"><span>screen 68</span></div>
+                  <div>Back Camera: <span class="tertiary">2 camera 12 MP</span></div>
+                  <div>Front Camera: <span class="tertiary">7 MP</span></div>
+                  <div><a href="#!" onclick="">Remove</a></div>
+                </div>
+              </div>
+              <div class="product__2">
+                <div class="qty">
+                  <span><b>Quantity:</b> </span> &nbsp; &nbsp;
+                  <span class="minus bg-dark" onclick="">-</span>
+                  <span class="quantityResult mx-2">1</span>
+                  <span class="plus bg-dark" onclick="">+</span>
+                </div>
+                <div class="product__price"><b>$1000</b></div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__1">
+                <div class="product__thumbnail">
+                  <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg" alt="Italian Trulli">
+                </div>
+                <div class="product__details">
+                  <div><b>iphoneX</b></div>
+                  <div class="tertiary"><span>screen 68</span></div>
+                  <div>Back Camera: <span class="tertiary">2 camera 12 MP</span></div>
+                  <div>Front Camera: <span class="tertiary">7 MP</span></div>
+                  <div><a href="#!" onclick="">Remove</a></div>
+                </div>
+              </div>
+              <div class="product__2">
+                <div class="qty">
+                  <span><b>Quantity:</b> </span> &nbsp; &nbsp;
+                  <span class="minus bg-dark" onclick="">-</span>
+                  <span class="quantityResult mx-2">1</span>
+                  <span class="plus bg-dark" onclick="">+</span>
+                </div>
+                <div class="product__price"><b>$1000</b></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="cart__totals">
+          <table class="totals">
+            <tbody>
+              <tr>
+                <th class="align-left font-normal tertiary">Subtotal</th>
+                <td class="align-right" id="subTotal">$0</td>
+              </tr>
+              <tr>
+                <th class="align-left font-normal tertiary">
+                  Shipping <small>(estimated)</small>
+                </th>
+                <td class="align-right" id="shipping">$0</td>
+              </tr>
+              <tr>
+                <th class="align-left font-normal tertiary">
+                  Tax <small>(estimated)</small>
+                </th>
+                <td class="align-right" id="tax">$0</td>
+              </tr>
+              <tr>
+                <th class="align-left">Total</th>
+                <td class="align-right" id="priceTotal">$0</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="tertiary titleSmall">
+                  <small>Estimations based on New York, United States</small>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="form__footer d-flex">
+            <button class="btn btn-cart first js-toggle-cart">Continue Shopping</button>
+            <button class="btn btn-cart green-btn" onclick="">Pay Now</button>
+            <button class="btn btn-cart red-btn me-5 ms-0 px-4" onclick="" id="emptyCart">
+              <i class="fa-solid fa-trash me-2"></i> Empty Cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
