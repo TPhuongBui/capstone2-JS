@@ -55,16 +55,6 @@ header #navbarSupportedContent a:hover{
 }
 
 
-@media screen and (max-width: 992px) {
-    header .navbar-toggler {
-      background-color: #fff;
-      background-image: url(../img/button-list.png);
-      background-size: cover;
-    }
-    header .navbar .nav-item {
-      text-align: center;
-    }
-}
 /* END HEADER */
 
 
@@ -87,12 +77,12 @@ header #navbarSupportedContent a:hover{
     width: 85%;
 }
 
-.mainItem .cartItem{
+/* .mainItem .cartItem{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 60px;
-}
+} */
 
 .mainCart{
     background: #FFF;
@@ -108,9 +98,9 @@ header #navbarSupportedContent a:hover{
 }
 
 
-.cardTop img{
+.cartTop img{
     max-width: 100%;
-    max-height: 300px;
+    height: 300px;
 }
 
 .cartBody h2{
@@ -127,6 +117,7 @@ header #navbarSupportedContent a:hover{
 .cartBody p{
     font-size: 18px;
     margin-top: 15px;
+    height: 100px;
 }
 
 .active .cartBottom button {
@@ -361,3 +352,21 @@ small {
 }
 
 /* END CART PRODUCT */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+    header .navbar-toggler {
+      background-color: #fff;
+      background-image: url(../img/button-list.png);
+      background-size: cover;
+    }
+    header .navbar .nav-item {
+      text-align: center;
+    }
+}
+
+.mainCart {
+    width: 380px;
+    margin: 10px;
+}
