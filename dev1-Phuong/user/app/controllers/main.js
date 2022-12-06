@@ -16,7 +16,7 @@ function layDanhSachSanPham() {
         //todo: Hiển thị lên table, chỉ chạy hiển thị khi lấy dữ liệu thành công
         showMainPhoneList(result.data);
         listProductList = result.data;
-        console.log(listProductList);
+        // console.log(listProductList);
     })
 
     promise.catch(function (error) {

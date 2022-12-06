@@ -37,8 +37,12 @@ function hienThiDashboard(mangSP) {
 }
 document.querySelector("#btnThemSP").onclick = function () {
 
-  document.querySelector("#myModal .modal-footer").innerHTML = `<button class="btn btn-success" onclick="themSanPham()">Thêm sản phẩm</button>`
+  document.querySelector("#myModal .modal-footer").innerHTML = `<button class="btn btn-success" onclick="themSanPham()">Thêm sản phẩm</button>` + `<button id="btnCapNhat" onclick="" type="button" class="btn btn-success">Reset</button>` + `<button id="btnDong" type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>`
 }
+
+
+
+
 function themSanPham() {
   // console.log("hàm thêm sp");
   var TenSP = document.querySelector("#TenSP").value;
@@ -61,7 +65,8 @@ function themSanPham() {
   if (isValid) {
     var spNew = new SanPham(TenSP, Hinhanh, gia, Thongsotruoc, Thongsosau, Manhinh, Mota, Loai);
     // console.log(spNew)
-    spService.themSP(spNew).then(function (result) {
+    spService.themSP(spNew)
+    .then(function (result) {
       // console.log(result);
       alert("thêm thành công")
       document.querySelector("#TenSP").value = ""
@@ -72,7 +77,6 @@ function themSanPham() {
       document.querySelector("#Thongsotruoc").value = ""
       document.querySelector("#Mota").value = ""
       document.querySelector("#Loai").value = ""
-      document.querySelector("#myModal .close").click() = ""
       layDanhSachSanPham();
     })
       .catch(function (error) {
@@ -153,6 +157,8 @@ function capNhatSanPham(id) {
       })
   }
 }
+
+
 function timKiemsanpham() {
   var tuKhoatim = document.querySelector("#searchName").value;
   var promise = spService.layDanhSachSP();

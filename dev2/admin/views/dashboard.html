@@ -81,7 +81,7 @@
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" id="formQLSP">
           <!-- Modal Header -->
           <div class="modal-header">
             <h4 class="modal-title">Quản lý sản phẩm</h4>
@@ -153,9 +153,9 @@
                 <div class="col-md-12 pb-2">
                   <label for="">Loại </label>
                   <select name="" id="Loai" class="form-control">
-                      <option>Chọn Loại</option>
-                      <option value="Iphone">Iphone</option>
-                      <option value="Samsung">Samsung</option>
+                    <option>Chọn Loại</option>
+                    <option value="Iphone">Iphone</option>
+                    <option value="Samsung">Samsung</option>
                   </select>
                   <span id="spanLoai" class="text-danger"></span>
                 </div>
@@ -164,7 +164,8 @@
             </form>
           </div>
           <!-- Modal footer -->
-          <div class="modal-footer"></div>
+          <div class="modal-footer">
+          </div>
         </div>
       </div>
     </div>
@@ -191,10 +192,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-  
+
   <script src="../models/SanPham.js"></script>
-  <script src="../services/SanPhamService.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="../services/SanPhamServices.js"></script>
   <script src="../controllers/Validation.js"></script>
   <script src="../controllers/admin.js"></script>
 </body>
